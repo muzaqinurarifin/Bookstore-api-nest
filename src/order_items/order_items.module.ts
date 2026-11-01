@@ -1,0 +1,12 @@
+import { Module } from '@nestjs/common';
+import { TypeOrmModule } from '@nestjs/typeorm';
+import { OrderItem } from './entities/order-item.entity.js';
+import { getDatabaseConfig } from '../database/database.config.js';
+
+const databaseConfig = getDatabaseConfig();
+
+@Module({
+  imports: databaseConfig ? [TypeOrmModule.forFeature([OrderItem])] : [],
+  exports: databaseConfig ? [TypeOrmModule] : [],
+})
+export class OrderItemsModule {}
