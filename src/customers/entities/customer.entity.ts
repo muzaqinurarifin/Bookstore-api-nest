@@ -8,7 +8,7 @@ import {
   UpdateDateColumn,
 } from 'typeorm';
 import type { Relation } from 'typeorm';
-import { CustomerAddress } from '../../customer_addresses/entities/customer-address.entity.js';
+import { CustomerAddress } from '../../customers/entities/customer-address.entity.js';
 import { Order } from '../../orders/entities/order.entity.js';
 
 @Entity('customers')

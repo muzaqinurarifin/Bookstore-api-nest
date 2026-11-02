@@ -12,7 +12,7 @@ import {
 } from 'typeorm';
 import type { Relation } from 'typeorm';
 import { Customer } from '../../customers/entities/customer.entity.js';
-import { OrderItem } from '../../order_items/entities/order-item.entity.js';
+import { OrderItem } from '../../orders/entities/order-item.entity.js';
 import { Payment } from '../../payments/entities/payment.entity.js';
 import { Shipment } from '../../shipments/entities/shipment.entity.js';
 

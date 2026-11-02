@@ -23,7 +23,9 @@ export class BookAuthor {
   @JoinColumn({ name: 'book_id' })
   book: Relation<Book>;
 
-  @ManyToOne(() => Author, (author) => author.bookAuthors, { onDelete: 'CASCADE' })
+  @ManyToOne(() => Author, (author) => author.bookAuthors, {
+    onDelete: 'CASCADE',
+  })
   @JoinColumn({ name: 'author_id' })
   author: Relation<Author>;
 

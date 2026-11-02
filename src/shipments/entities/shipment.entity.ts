@@ -26,7 +26,12 @@ export class Shipment {
   @Column({ type: 'varchar', length: 100 })
   courier: string;
 
-  @Column({ name: 'tracking_number', type: 'varchar', length: 100, nullable: true })
+  @Column({
+    name: 'tracking_number',
+    type: 'varchar',
+    length: 100,
+    nullable: true,
+  })
   trackingNumber: string | null;
 
   @Column({ type: 'varchar', length: 30 })

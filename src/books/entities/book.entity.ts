@@ -11,7 +11,7 @@ import {
 } from 'typeorm';
 import type { Relation } from 'typeorm';
 import { Category } from '../../categories/entities/category.entity.js';
-import { OrderItem } from '../../order_items/entities/order-item.entity.js';
+import { OrderItem } from '../../orders/entities/order-item.entity.js';
 import { Publisher } from '../../publishers/entities/publisher.entity.js';
 import { BookAuthor } from '../../book_authors/entities/book-author.entity.js';
 
